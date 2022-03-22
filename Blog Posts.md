@@ -85,7 +85,7 @@ And try to connect to it using MetaMask.
 
 <h1>POST 3</h1>
 
-Blog #3
+
 Smart Contract
 Once we have the environment set up, we actually need to create a basic contract. The hello world for DApps is a greeter contract that does both reading and writing to the chain.
 //SPDX-License-Identifier: MIT
