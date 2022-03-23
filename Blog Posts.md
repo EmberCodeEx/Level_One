@@ -95,7 +95,8 @@ Just go ahead and create an account on MetaMask, set your password and then save
 <h2>Setting up Hard hat</h2>
 In order to test out our smart contracts, we need an environment that simulates the ethereum network locally. We will later try out our smart contract on a global testnet too.
 First, set up a react app that we will use to interact with our environment.
-```npx create-react-app react-dapp
+```
+npx create-react-app react-dapp
 cd react-dapp 
 ```
 
