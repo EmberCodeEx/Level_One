@@ -59,12 +59,13 @@ Sheeesh that was long.To summarize what we would be doing in this blog is that:
 
 <h2>Environment Setup</h2>
 Here's the stuff we'll need
-Linux Operating System(preferrably)
-NVM
-Node
-Hardhat
-MetaMask Wallet
-
+<ul>
+<li>Linux Operating System(preferrably)</li>
+<li>NVM</li>
+<li>Node</li>
+<li>Hardhat</li>
+<li>MetaMask Wallet</li>
+</ul>
 Press(in linux) Alt-F2 to open the Run Command box
 Set up NVM first for
 
