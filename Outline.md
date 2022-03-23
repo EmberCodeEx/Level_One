@@ -6,7 +6,7 @@
    <h2>2-Hello World dApp</h2>
 	<li>2.1-Basic of dApp</li>
 	<li>2.2-Deploying the dApp</li>
-	<li>2.3-Access contract from node.js<li></ul>
+	<li>2.3-Access contract from node.js</li></ul>
 
 <ul><h2>3-Creating a Coin (Token)</h2>
     <li>3.1- Token smart contract, exchange coins </li>
