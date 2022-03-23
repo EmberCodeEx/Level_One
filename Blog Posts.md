@@ -19,22 +19,22 @@ For instance if we are talking about currency we confirm that the sender has the
 So just like that there will be some other blocks and they will be connected to each other through a chain and so on and so forth.They will be linked together throught a series of operations. So in essence this is what a blockchain is. You keep on adding to the blockchain and this keeps on growing and is available publicly to everyone. So that is what a public blockchain. At each given instance we need to confirm that transactions are actually being made and all the rules are being followed. That is job of all the different verifiers that keep the blockchain running. That is basically how a blockchain works.
 Obviously there is alot more to it.
 
-<h2>Wallet</h2>
+<h2>Wallet:</h2>
 Think of the wallet as your “identifier” it has two parts: 
 1)A public key 
 2)A private key
 
 
-<h3>A public key</h3>: Is what you share with everyone hence the name “Public” and everyone can identify you via that. Whenever you say that for example  a wallet “4206969” is completing a transaction  we actually mean that a person who owns this wallet is completing a transaction.We are going to take a look at them later. 
+<h3>A public key:</h3> Is what you share with everyone hence the name “Public” and everyone can identify you via that. Whenever you say that for example  a wallet “4206969” is completing a transaction  we actually mean that a person who owns this wallet is completing a transaction.We are going to take a look at them later. 
 <h3>A private key</h3>: Associated with each public key is a thing called “private key” so what a private key does is it puts signatures on all the transactions. So think of it this way we need public key to actually sign into the blockchain, once we sign in people would be able to see it using your public. But they cannot sign stuff on your behalf.So only you can do the signature using the private key. YOU DO NOT share it with anyone, hence you can write/sign but everyone can verify. Obviously this is just the skim of it however what you really to need to know is the your Private key should be left PRIVATE and your public key PUBLIC.
 
-<h2>How to create Private and Public Keys</h2>:
+<h2>How to create Private and Public Keys:</h2>
 
 We can create these keys through a verify of ways and via a lot of tools but for this specific blog we are going to use a wallet.  A wallet is essentially what allows you to take care of your private and public keys. There are alot of E-wallets out there but again for this specific blog we are going to use a popular one called “Metamask” .Ethereum has a list of suggested wallets and this is one of them. We need this whole setup of the block chain on our local machine and the local system would be called a node. Think of it as the mirror of the actual blockchain you are going to be working with. Inorder to create this local node, there are plenty of tutorials that allow you to build this thing from scratch, but think of it in this way like you dont build your own webservers to start a website , you use apache etc.(layman) We are going to be using a framework called hardhat. It is a very popular tool to create local blockchain, then we are going  to move on to a distributed global network that is going to be the Ropsten test that is going to be exactly a mirror of the ethereum blockchain. And all the real life ethereum smart contracts and everything live on it the same as the actual live blockchain.It is the mirror of the mainet. It allows you to use fake currency before going to real work currency and actually deploying it on the mainet. We will not include that part unfortunately in this tutorial because that would require use of real ethereum. Once you get to the real ropsten testnet the ethereum mainnet  is literally the same thing. You just have to change a couple of URLS here and there and Boom you good to go. Essentially this is all you worry about. 
 
 ![image](https://user-images.githubusercontent.com/62566404/159703636-02af4041-c65f-4418-9133-70d8045953b5.png)
 
-<h2>GAS</h2>
+<h2>GAS:</h2>
 
 
 
