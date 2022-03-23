@@ -316,6 +316,12 @@ Take note of the token address. We'll need it.
 Go to MetaMask and click on Import Token in the main window. Paste the address of the token we just created. Set Decimal to 0 if needed. Now you should have the REC token added with the amount properly set.
 
 You can transfer REC token to another account as you can ETH. Of course, you'll need ETH for gas during transaction writing. Go ahead and transfer some RECs to recly-test0x account.
+
+![image](https://user-images.githubusercontent.com/100485149/159700776-dfb9e68d-3311-48cd-9d68-79f21d6c4c5d.png)
+
+
+
+
  
 <h2> Sending and Receiving Tokens using Web Frontend </h2>
 Add the following two functions to src/App.js.
