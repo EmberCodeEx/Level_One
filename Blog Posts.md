@@ -29,11 +29,11 @@ Think of the wallet as your “identifier” it has two parts:
 
 
 <h3>A public key:</h3> Is what you share with everyone hence the name “Public” and everyone can identify you via that. Whenever you say that for example  a wallet “1234x567890x1011” is completing a transaction  we actually mean that a person who owns this wallet is completing a transaction.We are going to take a look at them later. 
-<h3>A private key:</h3> Associated with each public key is a thing called “private key” so what a private key does is it puts signatures on all the transactions. So think of it this way we need public key to actually sign into the blockchain, once we sign in people would be able to see it using your public. But they cannot sign stuff on your behalf.So only you can do the signature using the private key. YOU DO NOT share it with anyone, hence you can write/sign but everyone can verify. Obviously this is just the skim of it however what you really to need to know is the your Private key should be left PRIVATE and your public key PUBLIC.
+<h3>A private key:</h3> Associated with each public key is a thing called “private key” .what a private key does is it puts signatures on all the transactions.Think of it this way we need public key to actually sign into the blockchain, once we sign in people would be able to see it using your public. But they cannot sign stuff on your behalf.The thing to note is that only you can do the signature using the private key. YOU DO NOT share it with anyone, hence you can write/sign but everyone can verify. Obviously this is just the skim of it however what you really to need to know is the your Private key should be left PRIVATE and your public key PUBLIC.
 
 <h2>How to create Private and Public Keys:</h2>
 
-We can create these keys through a verify of ways and via a lot of tools but for this specific blog we are going to use a wallet.  A wallet is essentially what allows you to take care of your private and public keys. There are alot of E-wallets out there but again for this specific blog we are going to use a popular one called “Metamask” .Ethereum has a list of suggested wallets and this is one of them. We need this whole setup of the block chain on our local machine and the local system would be called a node. Think of it as the mirror of the actual blockchain you are going to be working with. Inorder to create this local node, there are plenty of tutorials that allow you to build this thing from scratch, but think of it in this way like you dont build your own webservers to start a website , you use apache etc.(layman) We are going to be using a framework called hardhat. It is a very popular tool to create local blockchain, then we are going  to move on to a distributed global network that is going to be the Ropsten test that is going to be exactly a mirror of the ethereum blockchain. And all the real life ethereum smart contracts and everything live on it the same as the actual live blockchain.It is the mirror of the mainet. It allows you to use fake currency before going to real work currency and actually deploying it on the mainet. We will not include that part unfortunately in this tutorial because that would require use of real ethereum. Once you get to the real ropsten testnet the ethereum mainnet  is literally the same thing. You just have to change a couple of URLS here and there and Boom you good to go. Essentially this is all you worry about. 
+We can create these keys through a variety of ways and via a lot of tools but for this specific blog we are going to use a wallet.  A wallet is essentially what allows you to take care of your private and public keys. There are alot of E-wallets out there but again for this specific blog we are going to use a popular one called “Metamask” .Ethereum has a list of suggested wallets and this is one of them. We need this whole setup of the blockchain on our local machine and the local system would be called a node. Think of it as the mirror of the actual blockchain you are going to be working with. Inorder to create this local node, there are plenty of tutorials that allow you to build this thing from scratch, but think of it in this way like you dont build your own webservers to start a website , you use apache etc.(layman) We are going to be using a framework called hardhat. It is a very popular tool to create local blockchain, then we are going  to move on to a distributed global network which is going to be the Ropsten test ,that is going to be exactly a mirror of the ethereum blockchain. And all the real life ethereum smart contracts and everything live on it is same as the actual live blockchain.It is the mirror of the mainet. It allows you to use fake currency before going to real working currency and actually deploying it on the mainet. We will not include that part unfortunately in this tutorial because that would require use of real ethereum. Once you get to the real ropsten testnet the ethereum mainnet  is literally the same thing. You just have to change a couple of URLS here and there and Boom you good to go. Essentially this is all you worry about. 
 
 ![image](https://user-images.githubusercontent.com/62566404/159703636-02af4041-c65f-4418-9133-70d8045953b5.png)
 
@@ -41,12 +41,18 @@ We can create these keys through a verify of ways and via a lot of tools but for
 
 
 
-When you're going to write to the blockchain you need something which is called “Gas”, It is something mandatory inorder to write something to the blockchain. And you're going to need it for your first transaction. There are a couple of third party resources that give you the “money to play with “ on the testnet. Disclaimer this is fake money so you can't really use it to buy video games, we mean "project resources".//so we are going use faucet to it some gas// finally when we are going to read some information of the blockchain, we are going to use node js application that is going to go and read the information for us, for this we are going to use the popular library called ether to communicate with the blockchain.You may have realized that we have not dug deep into the usual topics such as what blocks, hashes etc are. And the reason is that you dont need to know all of that inorder to create a blockchain and to use it.That is one of the biggest problems that make other blogs  BORING and lengthy. You dont need to know how the engine works inorder to drive a car, just like in this case you dont need to know about the hashes and the blocks to run a blockchain. Dont take my word for it, just headover to the ethereum guy’s(Gavin Wood) solidarity official documentation.(solidarity: official language for ethereum blockchain).
+When you're going to write to the blockchain you need something which is called “Gas”, It is mandatory inorder to write something to the blockchain. And you're going to need it for your first transaction. There are a couple of third party resources that give you the “money to play with “ on the testnet. Disclaimer this is fake money so you can't really use it to buy video games, we mean "project resources".//so we are going use faucet to it some gas// finally when we are going to read some information of the blockchain, we are going to use node js application that is going to go and read the information for us, for this we are going to use the popular library called ether to communicate with the blockchain.You may have realized that we have not dug deep into the usual topics such as what blocks, hashes etc are. And the reason is that you dont need to know all of that inorder to create a blockchain and to use it.That is one of the biggest problems that make other blogs  BORING and lengthy. You dont need to know how the engine works inorder to drive a car, just like in this case you dont need to know about the hashes and the blocks to run a blockchain. Dont take my word for it, just headover to the ethereum guy’s(Gavin Wood) solidarity official documentation.(solidarity: official language for ethereum blockchain).
 Sheeesh that was long.To summarize what we would be doing in this blog is that:
-Make a simple Node js application 
-Connect it to the blockchain
-Using metamask we are going to create public private keys 
-We are going to create a node with hardhat, which is going to put everything come together. 
+
+1)Make a simple Node js application 
+
+2)Connect it to the blockchain
+
+3)Using metamask we are going to create public private keys
+
+4)We are going to create a node with hardhat, which is going to put everything come together.
+
+
 “So letssssss get it STARTED in here”
 
 <h1>POST 2</h1>
@@ -183,15 +189,19 @@ Note the output in console as well as ether changes in your MetaMask accounts.
 
 <h1>POST 4 </h1>
 
-Blog#4
+
 Deploying the Greeter Smart Contract
 A deploy script is created for you by Hardhat automatically. Just change it to a more meaningful name.
+
+
 mv scripts/sample-script.js scripts/deploy.js
 
 Take a look at the script and then go ahead and deploy the contract. Since this is a hello world, there isn't anything we need to change.
+
 npx hardhat run scripts/deploy.js --network localhost
 
 We will get an output that tells us the address (or ID) of this contract.
+
 Greeter deployed to: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
 
 Keep track of this address. We'll need it to interact with our contract.
