@@ -2,7 +2,7 @@
 
 <h2>1.	Web Site: </h2>
 
-Here you can get your NFT into Blockchain. In which you can connect your wallet and purchase all NTFS and smart contract using this Web site 
+Here you can get your NFT into Blockchain. In which you can connect your wallet and purchase all NTFS and smart contract using this website
 (NFTS are coming to Blockchain.com)
 
 https://www.blockchain.com
