@@ -149,33 +149,33 @@ Once we have the environment set up, we actually need to create a basic contract
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "hardhat/console.sol";
+```import "hardhat/console.sol";```
 
-contract Greeter {
-  string greeting;
+```contract Greeter {```
+  ```string greeting;```
 ![image](https://user-images.githubusercontent.com/62806277/159704294-4967d34f-96ce-4922-83cd-d0727eb53e4b.png)
 
-  constructor(string memory _greeting) {
-    console.log("Deploying a Greeter with greeting:", _greeting);
-    greeting = _greeting;
-  }
+  ```constructor(string memory _greeting) {```
+  ```  console.log("Deploying a Greeter with greeting:", _greeting);```
+ ```   greeting = _greeting;```
+ ``` }```
 
-  function greet() public view returns (string memory) {
-    return greeting;
-  }
+  ```function greet() public view returns (string memory) {```
+```return greeting;```
+  ```}```
 
-  function setGreeting(string memory _greeting) public {
-    console.log("Changing greeting from '%s' to '%s'", greeting, _greeting);
-    greeting = _greeting;
-  }
-}
-
+  ```function setGreeting(string memory _greeting) public {```
+   ``` console.log("Changing greeting from '%s' to '%s'", greeting, _greeting);```
+  ```  greeting = _greeting;```
+ ``` }```
+```}```
+   
 Our contract is in solidity. This cannot be accessed directly from our Javascript frameworks. For that, we need to "compile" it to Javscript (ABI). Think of this as a wrapper that connects to the contract and can help you call functions of the contract without having to worry about the details (marshalling etc.) yourself.
 The actual command is pretty simple:
 npx hardhat compile
 
 A new file will be created in:
-src/artifacts/contracts/Greeter.sol/Greeter.json
+```src/artifacts/contracts/Greeter.sol/Greeter.json```
 
 ![image](https://user-images.githubusercontent.com/62806277/159704325-3b415914-201b-4316-a678-9f85b2ef05ea.png)
 
@@ -193,7 +193,7 @@ We will import this file when writing our react script.
  
  
 Starting a Dummy Network and Deploying the Contract
-npx hardhat node
+```npx hardhat node```
 
 These are test accounts created for the purpose of testing the local network. We'll use these for a while. Make sure you don't use them on actual Mainnet or even the public testnets.
 Take note of the private key and address of the first test account.
