@@ -191,14 +191,27 @@ Note the output in console as well as ether changes in your MetaMask accounts.
 
 
 Deploying the Greeter Smart Contract
-A deploy script is created for you by Hardhat automatically. Just change it to a more meaningful name.
+A deploy script is created for you by Hardhat automatically. Just change it to a more meaningful name.To change the name use this command:
 
 
 mv scripts/sample-script.js scripts/deploy.js
 
 Take a look at the script and then go ahead and deploy the contract. Since this is a hello world, there isn't anything we need to change.
 
+Use vi or gedit
+
+In my case I will use gedit
+
+gedit scripts/deploy.js
+
+Now to Deploy the contract use this following command:
+
+
+
 npx hardhat run scripts/deploy.js --network localhost
+
+![image](https://user-images.githubusercontent.com/62566404/159721212-8cd2a8a6-7a3b-44d0-8d6d-c11b33e737fb.png)
+
 
 We will get an output that tells us the address (or ID) of this contract.
 
@@ -211,9 +224,18 @@ Keep track of this address. We'll need it to interact with our contract.
 ![image](https://user-images.githubusercontent.com/62566404/159710647-53d0ef32-22e6-4df0-b6b4-651259258d12.png)
  
  
- 
-Accessing from React App
-Use the following basic code to access the contract. We'll discuss the code in detail but for now, just put the following content in src/App.js file.
+ <h1>POST 4 </h1>
+<h2> Accessing from React App</h2>
+Use the following basic code to access the contract. We'll discuss the code in detail but for now, just put the following content in 
+
+src/App.js file
+
+**Now that the file is open,Put all the code given below into the App.js file**
+
+Remember the Greeter address from before? Keep this in mind
+![2](https://user-images.githubusercontent.com/62566404/159723491-dbe3e2df-1a72-41cc-aa22-89a0c426aae2.PNG)
+
+
 import './App.css';
 import { useState } from 'react';
 import { ethers } from 'ethers'   // acts like a backend for our Web3/DApp 
@@ -273,13 +295,53 @@ function App() {
 
 export default App;
 
+
+You will see something like this 
+
+![image](https://user-images.githubusercontent.com/62566404/159724690-c1ccabf6-f16a-4e93-ae47-69f8b774b2ca.png)
+
+
+
+
+
+
+
+
+
+Now put this following address into the const greeterAddress 
+
+![2](https://user-images.githubusercontent.com/62566404/159723700-2923275d-7183-434c-af49-ec79c38a00f2.PNG)
+
+like this 
+![image](https://user-images.githubusercontent.com/62566404/159725020-89923dab-f882-4eaa-8dd0-dc513d8d82ee.png)
+
+
+then save the file. *Do not forget to save all the files while you are editing them :)*
+
+
 Go ahead and start the npm test server on your local machine. This will let us interact with out contract through a web frontend.
+
+
 npm start
 
+![image](https://user-images.githubusercontent.com/62566404/159725368-8eea27d6-19ab-421f-b627-4a07091557f3.png)
+
+
+
+
+Use the localhost address given above and copy paste that into your broswer
+
 The app should open in your browser.
+
+
 Open Developer console and then click on the Get Greeting button. Take a look at the console where hardhat will output transaction/read details for you.
 Then, enter some text in the textbox and click on Set Greeting. You should get a popup in MetaMask asking you to select an account. Select the account you have balance in and connect. MetaMask will show you the gas required to run this transaction. Click ahead to run the transaction.
 See the console for hardhat that looks like this:
+
+ 
+![image](https://user-images.githubusercontent.com/62566404/159711664-dc541f86-3481-4b58-ac0e-ef654da00ec6.png)
+
+
 eth_sendRawTransaction
   Contract call:       Greeter#setGreeting
   Transaction:         0xf69ac559e520e58f5e647820a3a14cbd1f18861a8bc1b71911dfbb2da8e33a78
@@ -292,13 +354,18 @@ eth_sendRawTransaction
   console.log:
     Changing greeting from 'Hello, Hardhat!' to 'New Greeting!'
  
-![image](https://user-images.githubusercontent.com/62566404/159711664-dc541f86-3481-4b58-ac0e-ef654da00ec6.png)
+ 
+ 
+
 
 Now you are going to send the
 
 ![image](https://user-images.githubusercontent.com/62566404/159711718-9cbcc9db-10a4-41be-b1eb-ac8a769051cd.png)
 
  
+open your your metamask in the browser to see the working,Like this
+![image](https://user-images.githubusercontent.com/62566404/159726806-30bcd91d-7030-436c-a29b-8c831a36cfaf.png)
+
 
  
 Again, if you are re-doing the tutorial, reset the account in MetaMask to get rid of the stale state information in MetaMask.
