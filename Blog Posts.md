@@ -23,9 +23,8 @@ Obviously there is alot more to it.
 
 <h2>Wallet:</h2>
 Think of the wallet as your “identifier” it has two parts: 
+
 1)A public key 
-
-
 2)A private key
 
 
