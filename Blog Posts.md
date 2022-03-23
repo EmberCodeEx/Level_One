@@ -518,6 +518,22 @@ ${userAccount}`);
 
 // ...
 
+Also add the following in the React template in the same file:
+
+   <br />
+ 	<button onClick={getBalance}>Get Balance</button>
+ 	<button onClick={sendCoins}>Send Coins</button>
+ 	<input onChange={e => setUserAccount(e.target.value)} placeholder="Account ID" />
+ 	<input onChange={e => setAmount(e.target.value)} placeholder="Amount" />
+ 
+Start the npm server again.
+
+npm start
+
+
+In the server, click on Get Balance to get the REC balance. Copy the Account ID of
+recly-test0x and send 20 REC to that account. MetaMask will ask you to connect your
+account if it's been a while. You can now go ahead and send the REC. Check the balance again on both accounts to ensure RECs have been transferred.
 
 
 
