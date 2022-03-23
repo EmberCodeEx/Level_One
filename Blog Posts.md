@@ -258,6 +258,53 @@ eth_sendRawTransaction
 
 Again, if you are re-doing the tutorial, reset the account in MetaMask to get rid of the stale state information in MetaMask.
 
+<h1>POST 5 </h1>
+Let's Mint a New Token
+In this section, we are going to create a new Token called REC. This will be a sub currency and
+will showcase reads and writes to the ethereum blockchain.
+First, create a new contract by pasting the following code in contracts/Token.sol:
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+import "hardhat/console.sol";
+contract Token {
+string public name = "Recluze Token";
+string public symbol = "REC";
+uint public totalSupply = 1000;
+mapping(address => uint) balances;
+constructor() {
+balances[msg.sender] = totalSupply;
+}
+function transfer(address to, uint amount) external {
+require(balances[msg.sender] >= amount, "Insufficient
+tokens");
+balances[msg.sender] -= amount;
+balances[to] += amount;
+}
+function balanceOf(address account) external view returns
+(uint) {
+return balances[account];
+}
+}
+
+Compile the contract as before.
+npx hardhat compile
+Make the needed changes in scripts/deploy.js so that this contract is also deployed
+alongside the greeter.
+// in function main, add the following
+const Token = await hre.ethers.getContractFactory("Token");
+const token = await Token.deploy();
+await token.deployed();
+console.log("Token deployed to:", token.address);
+Then let's deploy it.
+npx hardhat run scripts/deploy.js --network localhost
+Take note of the token address. We'll need it.
+Go to MetaMask and click on Import Token in the main window. Paste the address of the
+token we just created. Set Decimal to 0 if needed. Now you should have the REC token added
+with the amount properly set.
+You can transfer REC token to another account as you can ETH. Of course, you'll need ETH for
+gas during transaction writing. Go ahead and transfer some RECs to recly-test0x account
+
+
 
 
 
