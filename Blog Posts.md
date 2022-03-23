@@ -317,5 +317,49 @@ Go to MetaMask and click on Import Token in the main window. Paste the address o
 
 You can transfer REC token to another account as you can ETH. Of course, you'll need ETH for gas during transaction writing. Go ahead and transfer some RECs to recly-test0x account.
  
+<h2> Sending and Receiving Tokens using Web Frontend </h2>
+Add the following two functions to src/App.js.
+
+// ...
+
+import Token from './artifacts/contracts/Token.sol/Token.json'
+// ...
+
+const tokenAddress = "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"	// !!! Change this
+// ...
+
+// Within App()
+
+const [userAccount, setUserAccount] = useState() const [amount, setAmount] = useState()
+
+async function getBalance() {
+ 	const [account] = await window.ethereum.request({ method: 'eth_requestAccounts' })
+ 
+ethers.providers.Web3Provider(window.ethereum);
+ 
+ 	const contract = new ethers.Contract(tokenAddress, Token.abi, provider)
+ 	const balance = await contract.balanceOf(account);
+
+ 
+ 	}
+
+// ...
+
+async function sendCoins() {
+ 	if (typeof window.ethereum !== 'undefined') {
+await requestAccount()
+const	provider	=	new	
+ethers.providers.Web3Provider(window.ethereum);
+ 	const contract = new ethers.Contract(tokenAddress, Token.abi, signer);
+ 	const transation = await contract.transfer(userAccount, amount);
+ 
+ 	console.log(`${amount} Coins successfully sent to
+${userAccount}`);
+ 	}
+
+// ...
+
+
+
 
 
