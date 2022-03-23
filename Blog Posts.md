@@ -28,7 +28,7 @@ We can create these keys through a verify of ways and via a lot of tools but for
 
 
 
-When you're going to write to the blockchain you need something which is called “Gas”, It is something mandatory inorder to write something to the blockchain. And you're going to need it for your first transaction. There are a couple of third party resources that give you the “money to play with “ on the testnet. Disclaimer this is fake money so you can't really use it to buy porn.we mean project resources.//so we are going use faucet to it some gas// finally when we are going to read some information of the blockchain, we are going to use node js application that is going to go and read the information for us, for this we are going to use the popular library called ether to communicate with the blockchain.You may have realized that we have not dug deep into the usual topics such as what blocks, hashes etc are. And the reason is that you dont need to know all of that inorder to create a blockchain and to use it.That is one of the biggest problems that make other blogs  BORING and lengthy. You dont need to know how the engine works inorder to drive a car, just like in this case you dont need to know about the hashes and the th blocks to run a blockchain. Dont take my word for it, just headover to the ethereum guy’s solidarity official documentation.(solidarity: official language for ethereum blockchain).
+When you're going to write to the blockchain you need something which is called “Gas”, It is something mandatory inorder to write something to the blockchain. And you're going to need it for your first transaction. There are a couple of third party resources that give you the “money to play with “ on the testnet. Disclaimer this is fake money so you can't really use it to buy video games, we mean "project resources".//so we are going use faucet to it some gas// finally when we are going to read some information of the blockchain, we are going to use node js application that is going to go and read the information for us, for this we are going to use the popular library called ether to communicate with the blockchain.You may have realized that we have not dug deep into the usual topics such as what blocks, hashes etc are. And the reason is that you dont need to know all of that inorder to create a blockchain and to use it.That is one of the biggest problems that make other blogs  BORING and lengthy. You dont need to know how the engine works inorder to drive a car, just like in this case you dont need to know about the hashes and the blocks to run a blockchain. Dont take my word for it, just headover to the ethereum guy’s(Gavin Wood) solidarity official documentation.(solidarity: official language for ethereum blockchain).
 Sheeesh that was long.To summarize what we would be doing in this blog is that:
 Make a simple Node js application 
 Connect it to the blockchain
@@ -40,10 +40,13 @@ We are going to create a node with hardhat, which is going to put everything com
 
 <h2>Environment Setup</h2>
 Here's the stuff we'll need
+Linux Operating System(preferrably)
 NVM
 Node
 Hardhat
 MetaMask Wallet
+
+Press(in linux) Alt-F2 to open the Run Command box
 Set up NVM first for
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
