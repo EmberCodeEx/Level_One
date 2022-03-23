@@ -73,30 +73,44 @@ Set up NVM first for
 
 Add the environment variables for accessing node commands.
 ``` nvm install --lts ```
+![image](https://user-images.githubusercontent.com/80161973/159760533-741adf75-cdcf-4aaa-8c94-408d3d737486.png)
+
+![image](https://user-images.githubusercontent.com/80161973/159760649-3016b05d-0aa3-46e4-afcf-8c5ea801de6a.png)
+
+![image](https://user-images.githubusercontent.com/80161973/159760692-906313ad-736c-4a2b-96f1-dcebb6f86b50.png)
+
 
 <h2>Install MetaMask</h2>
 MetaMask will manage our wallet so that we can easily view our accounts and test our DApps easily. Go ahead and install MetaMask from https://metamask.io/. I'll use Firefox but you can just as well use Chrome.
 (I strongly suggest you use MetaMask for this tutorial so that you can follow along. There's a million wallets out there and it would be difficult to debug issues if you use something other than MetaMask.)
 Just go ahead and create an account on MetaMask, set your password and then save the recovery keys as given in the instructions.
 
+![image](https://user-images.githubusercontent.com/80161973/159760874-ceb9b874-d25e-4279-adab-c17cc2cb2049.png)
+
+![image](https://user-images.githubusercontent.com/80161973/159760910-362125eb-de81-459e-84fe-ff63b82e723c.png)
+
+![image](https://user-images.githubusercontent.com/80161973/159760934-837cc2e8-fb6d-4476-9467-38038fb848f6.png)
+
+
 <h2>Setting up Hard hat</h2>
 In order to test out our smart contracts, we need an environment that simulates the ethereum network locally. We will later try out our smart contract on a global testnet too.
 First, set up a react app that we will use to interact with our environment.
-npx create-react-app react-dapp
-cd react-dapp 
+```npx create-react-app react-dapp```
+```cd react-dapp ```
 
 Now go ahead and set up hardhat along with all its dependencies. For now, let's not go into the details of what each part does and what alternatives are available. That would only slow you down and create confusion. It's best to get a hello world done and study options afterwards.
+```
 npm install ethers hardhat @nomiclabs/hardhat-waffle \
             ethereum-waffle chai \
             @nomiclabs/hardhat-ethers
-
+ ```
 Let's create basic hardhat configs and setup.
 npx hardhat 
 
 Accept all defaults. This will create a basic sample project for us.
 We need to edit the hardhat config file so that this works well with MetaMask. ChainId is a unique identifier for the blockchain.
-vi hardhat.config.js
-
+```vi hardhat.config.js```
+```
 module.exports = {
   solidity: "0.8.4",
   paths: {                         // add this 
@@ -108,11 +122,22 @@ module.exports = {
     }
   }
 };
-
+```
 Start a node using:
-npx hardhat node 
+```npx hardhat node ```
+![image](https://user-images.githubusercontent.com/80161973/159761649-1726ce95-9702-4b3a-a4b8-b01b3123431a.png)
+
+![image](https://user-images.githubusercontent.com/80161973/159761671-aa3e5516-a7b6-4fba-927f-55cd284c0f3e.png)
+
+![image](https://user-images.githubusercontent.com/80161973/159761687-dcef6834-9a94-41a3-b6c9-9ec76fce2b22.png)
+
+![image](https://user-images.githubusercontent.com/80161973/159761704-ea03d5ac-3631-4cfa-a5da-3a805b8ce323.png)
+
+![image](https://user-images.githubusercontent.com/80161973/159761716-19b94225-c85c-4478-abef-5aedcc2bbfa9.png)
 
 And try to connect to it using MetaMask.
+
+![image](https://user-images.githubusercontent.com/80161973/159761737-2f4ea998-a60a-42ee-b10a-4bd93586b125.png)
 
 <h1>POST 3</h1>
 
