@@ -102,6 +102,7 @@ import "hardhat/console.sol";
 
 contract Greeter {
   string greeting;
+![image](https://user-images.githubusercontent.com/62806277/159704294-4967d34f-96ce-4922-83cd-d0727eb53e4b.png)
 
   constructor(string memory _greeting) {
     console.log("Deploying a Greeter with greeting:", _greeting);
@@ -125,13 +126,16 @@ npx hardhat compile
 A new file will be created in:
 src/artifacts/contracts/Greeter.sol/Greeter.json
 
+![image](https://user-images.githubusercontent.com/62806277/159704325-3b415914-201b-4316-a678-9f85b2ef05ea.png)
 
 We will import this file when writing our react script.
 
  
  
+![image](https://user-images.githubusercontent.com/62806277/159704344-55b7d75b-1192-4b29-a49d-7acc958ce3c1.png)
 
  
+![image](https://user-images.githubusercontent.com/62806277/159704354-d1e821a0-c0b9-43b5-8648-7e792d4a120e.png)
 
  
  
@@ -155,6 +159,7 @@ Note the output in console as well as ether changes in your MetaMask accounts.
 
 
 
+![image](https://user-images.githubusercontent.com/62806277/159704382-330fb927-5530-4138-80f4-83f8aea52588.png)
 
 
 
