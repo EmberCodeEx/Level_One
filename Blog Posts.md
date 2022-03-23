@@ -9,23 +9,27 @@ There are only 2 things you can do with it:
 
 <h2>How to write to it?</h2>
 
-You come up with a transaction of something that has to be written to a blockchain,and you are going to send it to the distributed system or the blockchain. It goes over there and all of the info is collected together and put together in whats called a “Block” , inside a block they are put in smaller “package”. And this package is sent to what is called a “Verifier”.So these verifiers look at the content of the transactions in this one block, all the them. And they are going to ensure that they satisfy the rules defined by the blockchain.
+You come up with a transaction of something that has to be written to a blockchain,and you are going to send it to the distributed system or the blockchain. It goes over there and all of the info is collected together and put together in whats called a “Block” , inside a block they are put in to smaller “package”. And this package is sent to what is called a “Verifier”.So these verifiers look at the content of the transactions in this one block ,all of them. And they are going to ensure that they satisfy the rules defined by the blockchain.
 
 ![image](https://user-images.githubusercontent.com/62566404/159703272-8c54ab59-cd08-40b8-a77e-c9b808d6797e.png)
 
 
-For instance if we are talking about currency we confirm that the sender has the amount he is sending to confirm the transaction, rules like that, verifiers verify everything. After verification verifiers send this “signed or confirmed” information back to the blockchain or the “greater network”. So that is essentially blockchain.
+For instance if we are talking about currency we confirm that the sender has the amount he is sending to confirm the transaction, rules like that, verifiers verify everything. After verification, verifiers send this “signed or confirmed” information back to the blockchain or the “greater network”.That is essentially a Blockchain.
 
-So just like that there will be some other blocks and they will be connected to each other through a chain and so on and so forth.They will be linked together throught a series of operations. So in essence this is what a blockchain is. You keep on adding to the blockchain and this keeps on growing and is available publicly to everyone. So that is what a public blockchain. At each given instance we need to confirm that transactions are actually being made and all the rules are being followed. That is job of all the different verifiers that keep the blockchain running. That is basically how a blockchain works.
+Just like that there will be some other blocks and they will be connected to each other through a chain so on and so forth.They will be linked together throught a series of operations.In essence this is what a blockchain is. You keep on adding to the blockchain and this keeps on growing and is available publicly to everyone. That is what a public blockchain is. At each given instance we need to confirm that transactions are actually being made and all the rules are being followed. That is job of all the different verifiers, that keep the blockchain running
+
+
 Obviously there is alot more to it.
 
 <h2>Wallet:</h2>
 Think of the wallet as your “identifier” it has two parts: 
 1)A public key 
+
+
 2)A private key
 
 
-<h3>A public key:</h3> Is what you share with everyone hence the name “Public” and everyone can identify you via that. Whenever you say that for example  a wallet “4206969” is completing a transaction  we actually mean that a person who owns this wallet is completing a transaction.We are going to take a look at them later. 
+<h3>A public key:</h3> Is what you share with everyone hence the name “Public” and everyone can identify you via that. Whenever you say that for example  a wallet “1234x567890x1011” is completing a transaction  we actually mean that a person who owns this wallet is completing a transaction.We are going to take a look at them later. 
 <h3>A private key:</h3> Associated with each public key is a thing called “private key” so what a private key does is it puts signatures on all the transactions. So think of it this way we need public key to actually sign into the blockchain, once we sign in people would be able to see it using your public. But they cannot sign stuff on your behalf.So only you can do the signature using the private key. YOU DO NOT share it with anyone, hence you can write/sign but everyone can verify. Obviously this is just the skim of it however what you really to need to know is the your Private key should be left PRIVATE and your public key PUBLIC.
 
 <h2>How to create Private and Public Keys:</h2>
@@ -180,9 +184,8 @@ Note the output in console as well as ether changes in your MetaMask accounts.
 
 <h1>POST 4 </h1>
 
-                            
-<h2>Deploying the Greeter Smart Contract </h2>
-
+Blog#4
+Deploying the Greeter Smart Contract
 A deploy script is created for you by Hardhat automatically. Just change it to a more meaningful name.
 mv scripts/sample-script.js scripts/deploy.js
 
@@ -194,10 +197,13 @@ Greeter deployed to: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
 
 Keep track of this address. We'll need it to interact with our contract.
 
- 
+![image](https://user-images.githubusercontent.com/62566404/159710586-19e64530-2f2d-44a1-a749-046dc70ee816.png)
 
+![image](https://user-images.githubusercontent.com/62566404/159710647-53d0ef32-22e6-4df0-b6b4-651259258d12.png)
  
-<h2>Accessing from React App</h2>
+ 
+ 
+Accessing from React App
 Use the following basic code to access the contract. We'll discuss the code in detail but for now, just put the following content in src/App.js file.
 import './App.css';
 import { useState } from 'react';
@@ -276,12 +282,19 @@ eth_sendRawTransaction
 
   console.log:
     Changing greeting from 'Hello, Hardhat!' to 'New Greeting!'
+ 
+![image](https://user-images.githubusercontent.com/62566404/159711664-dc541f86-3481-4b58-ac0e-ef654da00ec6.png)
 
+Now you are going to send the
 
+![image](https://user-images.githubusercontent.com/62566404/159711718-9cbcc9db-10a4-41be-b1eb-ac8a769051cd.png)
 
+ 
 
-
+ 
 Again, if you are re-doing the tutorial, reset the account in MetaMask to get rid of the stale state information in MetaMask.
+
+
 
 <h1>POST 5 </h1>
 
