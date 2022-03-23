@@ -235,6 +235,7 @@ src/App.js file
 Remember the Greeter address from before? Keep this in mind
 ![2](https://user-images.githubusercontent.com/62566404/159723491-dbe3e2df-1a72-41cc-aa22-89a0c426aae2.PNG)
 
+```
 import './App.css';
 import { useState } from 'react';
 import { ethers } from 'ethers'   // acts like a backend for our Web3/DApp 
@@ -294,7 +295,7 @@ function App() {
 
 export default App;
 
-
+```
 
 You will see something like this 
 
