@@ -235,7 +235,6 @@ src/App.js file
 Remember the Greeter address from before? Keep this in mind
 ![2](https://user-images.githubusercontent.com/62566404/159723491-dbe3e2df-1a72-41cc-aa22-89a0c426aae2.PNG)
 
-
 import './App.css';
 import { useState } from 'react';
 import { ethers } from 'ethers'   // acts like a backend for our Web3/DApp 
@@ -296,6 +295,7 @@ function App() {
 export default App;
 
 
+
 You will see something like this 
 
 ![image](https://user-images.githubusercontent.com/62566404/159724690-c1ccabf6-f16a-4e93-ae47-69f8b774b2ca.png)
@@ -313,6 +313,8 @@ Now put this following address into the const greeterAddress
 ![2](https://user-images.githubusercontent.com/62566404/159723700-2923275d-7183-434c-af49-ec79c38a00f2.PNG)
 
 like this 
+
+
 ![image](https://user-images.githubusercontent.com/62566404/159725020-89923dab-f882-4eaa-8dd0-dc513d8d82ee.png)
 
 
@@ -324,12 +326,16 @@ Go ahead and start the npm test server on your local machine. This will let us i
 
 npm start
 
+
+
 ![image](https://user-images.githubusercontent.com/62566404/159725368-8eea27d6-19ab-421f-b627-4a07091557f3.png)
 
 
 
 
 Use the localhost address given above and copy paste that into your broswer
+
+
 
 The app should open in your browser.
 
@@ -338,8 +344,10 @@ Open Developer console and then click on the Get Greeting button. Take a look at
 Then, enter some text in the textbox and click on Set Greeting. You should get a popup in MetaMask asking you to select an account. Select the account you have balance in and connect. MetaMask will show you the gas required to run this transaction. Click ahead to run the transaction.
 See the console for hardhat that looks like this:
 
+
  
 ![image](https://user-images.githubusercontent.com/62566404/159711664-dc541f86-3481-4b58-ac0e-ef654da00ec6.png)
+
 
 
 eth_sendRawTransaction
@@ -353,14 +361,11 @@ eth_sendRawTransaction
 
   console.log:
     Changing greeting from 'Hello, Hardhat!' to 'New Greeting!'
- 
+
  
  
 
 
-Now you are going to send the
-
-![image](https://user-images.githubusercontent.com/62566404/159711718-9cbcc9db-10a4-41be-b1eb-ac8a769051cd.png)
 
  
 open your your metamask in the browser to see the working,Like this
