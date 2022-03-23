@@ -155,21 +155,22 @@ pragma solidity ^0.8.0;
   ```string greeting;```
 ![image](https://user-images.githubusercontent.com/62806277/159704294-4967d34f-96ce-4922-83cd-d0727eb53e4b.png)
 
-  ```constructor(string memory _greeting) {```
-  ```  console.log("Deploying a Greeter with greeting:", _greeting);```
- ```   greeting = _greeting;```
- ``` }```
+```
+  constructor(string memory _greeting) {
+    console.log("Deploying a Greeter with greeting:", _greeting);
+    greeting = _greeting;
+ }
 
-  ```function greet() public view returns (string memory) {```
-```return greeting;```
-  ```}```
+  function greet() public view returns (string memory) {
+return greeting;
+  }
 
-  ```function setGreeting(string memory _greeting) public {```
-   ``` console.log("Changing greeting from '%s' to '%s'", greeting, _greeting);```
-  ```  greeting = _greeting;```
- ``` }```
-```}```
-   
+  function setGreeting(string memory _greeting) public {
+    console.log("Changing greeting from '%s' to '%s'", greeting, _greeting);
+   greeting = _greeting;
+ }
+}
+   ```
 Our contract is in solidity. This cannot be accessed directly from our Javascript frameworks. For that, we need to "compile" it to Javscript (ABI). Think of this as a wrapper that connects to the contract and can help you call functions of the contract without having to worry about the details (marshalling etc.) yourself.
 The actual command is pretty simple:
 npx hardhat compile
