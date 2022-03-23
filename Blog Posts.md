@@ -67,10 +67,11 @@ MetaMask Wallet
 
 Press(in linux) Alt-F2 to open the Run Command box
 Set up NVM first for
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+``` curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash ```
 
 Add the environment variables for accessing node commands.
-nvm install --lts
+``` nvm install --lts ```
 
 <h2>Install MetaMask</h2>
 MetaMask will manage our wallet so that we can easily view our accounts and test our DApps easily. Go ahead and install MetaMask from https://metamask.io/. I'll use Firefox but you can just as well use Chrome.
@@ -194,7 +195,7 @@ Deploying the Greeter Smart Contract
 A deploy script is created for you by Hardhat automatically. Just change it to a more meaningful name.To change the name use this command:
 
 
-mv scripts/sample-script.js scripts/deploy.js
+``` mv scripts/sample-script.js scripts/deploy.js ```
 
 Take a look at the script and then go ahead and deploy the contract. Since this is a hello world, there isn't anything we need to change.
 
@@ -202,13 +203,13 @@ Use vi or gedit
 
 In my case I will use gedit
 
-gedit scripts/deploy.js
+``` gedit scripts/deploy.js ```
 
 Now to Deploy the contract use this following command:
 
 
 
-npx hardhat run scripts/deploy.js --network localhost
+``` npx hardhat run scripts/deploy.js --network localhost ```
 
 ![image](https://user-images.githubusercontent.com/62566404/159721212-8cd2a8a6-7a3b-44d0-8d6d-c11b33e737fb.png)
 
@@ -233,6 +234,7 @@ src/App.js file
 **Now that the file is open,Put all the code given below into the App.js file**
 
 Remember the Greeter address from before? Keep this in mind
+
 ![2](https://user-images.githubusercontent.com/62566404/159723491-dbe3e2df-1a72-41cc-aa22-89a0c426aae2.PNG)
 
 ```
@@ -313,7 +315,7 @@ Now put this following address into the const greeterAddress
 
 ![2](https://user-images.githubusercontent.com/62566404/159723700-2923275d-7183-434c-af49-ec79c38a00f2.PNG)
 
-like this 
+like this:
 
 
 ![image](https://user-images.githubusercontent.com/62566404/159725020-89923dab-f882-4eaa-8dd0-dc513d8d82ee.png)
@@ -325,7 +327,7 @@ then save the file. *Do not forget to save all the files while you are editing t
 Go ahead and start the npm test server on your local machine. This will let us interact with out contract through a web frontend.
 
 
-npm start
+``` npm start ```
 
 
 
@@ -350,7 +352,7 @@ See the console for hardhat that looks like this:
 ![image](https://user-images.githubusercontent.com/62566404/159711664-dc541f86-3481-4b58-ac0e-ef654da00ec6.png)
 
 
-
+```
 eth_sendRawTransaction
   Contract call:       Greeter#setGreeting
   Transaction:         0xf69ac559e520e58f5e647820a3a14cbd1f18861a8bc1b71911dfbb2da8e33a78
@@ -362,14 +364,16 @@ eth_sendRawTransaction
 
   console.log:
     Changing greeting from 'Hello, Hardhat!' to 'New Greeting!'
-
+```
  
  
 
 
 
  
-open your your metamask in the browser to see the working,Like this
+open your your metamask in the browser to see the working,Like this:
+
+
 ![image](https://user-images.githubusercontent.com/62566404/159726806-30bcd91d-7030-436c-a29b-8c831a36cfaf.png)
 
 
