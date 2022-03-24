@@ -254,7 +254,7 @@ Keep track of this address. We'll need it to interact with our contract.
 ![image](https://user-images.githubusercontent.com/62566404/159710647-53d0ef32-22e6-4df0-b6b4-651259258d12.png)
  
  
- <h1>POST 4 </h1>
+ <h1>POST 5 </h1>
 <h2> Accessing from React App</h2>
 Use the following basic code to access the contract. We'll discuss the code in detail but for now, just put the following content in 
 
@@ -411,7 +411,7 @@ Again, if you are re-doing the tutorial, reset the account in MetaMask to get ri
 
 
 
-<h1>POST 5 </h1>
+<h1>POST 6 </h1>
 
 
 <h2>Let's Mint a New Token </h2>
@@ -536,7 +536,7 @@ recly-test0x and send 20 REC to that account. MetaMask will ask you to connect y
 account if it's been a while. You can now go ahead and send the REC. Check the balance again on both accounts to ensure RECs have been transferred.
 
 
-<h1>Post 6</h1>
+<h1>Post 7</h1>
 
 <h2>Deploying on the Public/Global Ropsten Network</h2>
 Now let's do the same with the online Ropsten Testnet because we actually want to have this app distributed! It is supposed to be a DApp after all!
