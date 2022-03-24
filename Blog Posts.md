@@ -546,7 +546,9 @@ The very first thing you need to do is get some ETH in your account. For this yo
  faucet". At the moment, the following faucets work:
 
 ●	https://faucet.ropsten.be/
+
 ●	https://faucet.metamask.io/
+
 ●	https://faucet.dimensions.network/
 
 Request ETH on all the faucets. You'll need it for testing and it sometimes takes time to
