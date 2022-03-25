@@ -159,15 +159,17 @@ And try to connect to it using MetaMask.
 <h2>Smart Contract</h2>
 
 Once we have the environment set up, we actually need to create a basic contract. The hello world for DApps is a greeter contract that does both reading and writing to the chain.
+```
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
+```
 
 ```import "hardhat/console.sol";```
 
-```contract Greeter {```
-  ```string greeting;```
+```contract Greeter {
+   string greeting;
 
-```
+
   constructor(string memory _greeting) {
     console.log("Deploying a Greeter with greeting:", _greeting);
     greeting = _greeting;
