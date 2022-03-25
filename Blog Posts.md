@@ -27,8 +27,8 @@ Think of the wallet as your “identifier” it has two parts:
 
 ```mermaid
 graph TD;
-   Wallet-->Public key;
-   Wallet-->Private key;   
+   Wallet-->PublicKey;
+   Wallet-->PrivateKey;   
 ```
 
 1)A public key 
