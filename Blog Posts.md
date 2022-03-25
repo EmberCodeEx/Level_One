@@ -187,7 +187,8 @@ return greeting;
    ```
  Our contract is in solidity. This cannot be accessed directly from our Javascript frameworks. For that, we need to "compile" it to Javscript (ABI). Think of this as a wrapper that connects to the contract and can help you call functions of the contract without having to worry about the details (marshalling etc.) yourself.
 The actual command is pretty simple:
-npx hardhat compile
+
+```npx hardhat compile```
 
 A new file will be created in:
 ```src/artifacts/contracts/Greeter.sol/Greeter.json```
@@ -228,7 +229,7 @@ Let's create a new account outside of Hardhat and send it some Ether.
 Go to Metamask and Account ```-> Create Account```. Give it a useful name. I'm using recly-test0x. Keep this account safe for now. We'll be using it later on. Save the private key by going to ... menu (the dots menu), then Account Details. Click on Export Private Key. Enter the password for MetaMask and save your private key somewhere. All of these are test keys and should defnitely not be used on mainnet.
 Switch to ```hh-test0x``` account and send some ether to recly-test0x. (When you do this again the next time you start this tutorial from scratch, you will get a nonce error. For that, simply go to``` Accounts -> Settings -> Advanced -> Reset Account.)```
 
-** Note : the output in console as well as ether, changes in your MetaMask accounts. **
+**Note**: **the output in console as well as ether, changes in your MetaMask accounts.** 
  
 
 
