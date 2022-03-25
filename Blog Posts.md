@@ -418,9 +418,9 @@ Again, if you are re-doing the tutorial, reset the account in MetaMask to get ri
 
 
 
-In this section, we are going to create a new Token called REC. This will be a sub currency and will showcase reads and writes to the ethereum blockchain.
+In this section, we are going to create a new Token called REC. This will be a sub currency and will showcase "reads" and "writes" to the Ethereum blockchain.
 
-First, create a new contract by pasting the following code in contracts/Token.sol:
+First of start by creating a new  contract by pasting the following code in contracts/Token.sol:
 
 //SPDX-License-Identifier: MIT pragma solidity ^0.8.0;
 import "hardhat/console.sol"; contract Token {
