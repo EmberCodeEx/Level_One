@@ -194,7 +194,7 @@ We will import this file when writing our react script.
  
  
  
-Starting a Dummy Network and Deploying the Contract
+<h3>Starting a Dummy Network and Deploying the Contract</h3>
 ```npx hardhat node```
 
 These are test accounts created for the purpose of testing the local network. We'll use these for a while. Make sure you don't use them on actual Mainnet or even the public testnets.
@@ -203,7 +203,7 @@ Let's go ahead and import these to our MetaMask Wallet.
 First, connect to the localhost network. To do this, click on the Network dropdown (top mid) of MetaMask and select localhost. Rest of the configurations are fine.
 Then, Account -> Import Account. Then paste your private key (for first test account) in there. You should have 10,000 ETH in there. They're not too useful though so don't get excited. Let's call this hh-test0x account.
 Let's create a new account outside of Hardhat and send it some Ether.
-Go to Metamask and Account -> Create Account. Give it a useful name. I'm using recly-test0x. Keep this account safe for now. We'll be using it later on. Save the private key by going to ... menu (the dots menu), then Account Details. Click on Export Private Key. Enter the password for MetaMask and save your private key somewhere. All of these are test keys and should defnitely not be used on mainnet.
+Go to Metamask and Account ```-> Create Account```. Give it a useful name. I'm using recly-test0x. Keep this account safe for now. We'll be using it later on. Save the private key by going to ... menu (the dots menu), then Account Details. Click on Export Private Key. Enter the password for MetaMask and save your private key somewhere. All of these are test keys and should defnitely not be used on mainnet.
 Switch to hh-test0x account and send some ether to recly-test0x. (When you do this again the next time you start this tutorial from scratch, you will get a nonce error. For that, simply go to Accounts -> Settings -> Advanced -> Reset Account.)
 Note the output in console as well as ether changes in your MetaMask accounts.
  
@@ -246,7 +246,7 @@ Now to Deploy the contract use this following command:
 
 We will get an output that tells us the address (or ID) of this contract.
 
-Greeter deployed to: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+Greeter deployed to:``` 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0```
 
 Keep track of this address. We'll need it to interact with our contract.
 
@@ -259,7 +259,7 @@ Keep track of this address. We'll need it to interact with our contract.
 <h2> Accessing from React App</h2>
 Use the following basic code to access the contract. We'll discuss the code in detail but for now, just put the following content in 
 
-src/App.js file
+```src/App.js file```
 
 **Now that the file is open,Put all the code given below into the App.js file**
 
