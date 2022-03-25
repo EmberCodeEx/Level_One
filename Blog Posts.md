@@ -449,6 +449,7 @@ import "hardhat/console.sol"; contract Token {
 
 Compile the contract as before.
 
+```
 npx hardhat compile
 
 
@@ -459,12 +460,14 @@ const Token = await hre.ethers.getContractFactory("Token"); const token = await 
 await token.deployed();
 console.log("Token deployed to:", token.address);
 
+```
 
 Then let's deploy it.
 
+```
 npx hardhat run scripts/deploy.js --network localhost
 
-
+```
 Take note of the token address. We'll need it.
 
 Go to MetaMask and click on Import Token in the main window. Paste the address of the token we just created. Set Decimal to 0 if needed. Now you should have the REC token added with the amount properly set.
@@ -480,6 +483,7 @@ You can transfer REC token to another account as you can ETH. Of course, you'll 
 <h2> Sending and Receiving Tokens using Web Frontend </h2>
 Add the following two functions to src/App.js.
 
+```
 // ...
 
 import Token from './artifacts/contracts/Token.sol/Token.json'
@@ -518,19 +522,23 @@ ${userAccount}`);
  	}
 
 // ...
+```
 
 Also add the following in the React template in the same file:
 
+```
    <br />
  	<button onClick={getBalance}>Get Balance</button>
  	<button onClick={sendCoins}>Send Coins</button>
  	<input onChange={e => setUserAccount(e.target.value)} placeholder="Account ID" />
  	<input onChange={e => setAmount(e.target.value)} placeholder="Amount" />
  
+ ```
 Start the npm server again.
 
-npm start
-
+``` 
+npm start 
+```
 
 In the server, click on Get Balance to get the REC balance. Copy the Account ID of
 recly-test0x and send 20 REC to that account. MetaMask will ask you to connect your
