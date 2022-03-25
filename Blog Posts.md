@@ -154,7 +154,6 @@ pragma solidity ^0.8.0;
 
 ```contract Greeter {```
   ```string greeting;```
-![image](https://user-images.githubusercontent.com/62806277/159704294-4967d34f-96ce-4922-83cd-d0727eb53e4b.png)
 
 ```
   constructor(string memory _greeting) {
@@ -197,23 +196,28 @@ We will import this file when writing our react script.
 <h3>Starting a Dummy Network and Deploying the Contract</h3>
 ```npx hardhat node```
 
-These are test accounts created for the purpose of testing the local network. We'll use these for a while. Make sure you don't use them on actual Mainnet or even the public testnets.
-Take note of the private key and address of the first test account.
+<h3>Circumspection : </h3>
+
+1. These are test accounts created for the purpose of testing the local network. We'll use these for a while. Make sure you don't use them on actual Mainnet or even the public testnets.
+2. Take note of the private key and address of the first test account.
+
+<h3>Import wallet : </h3>
+
 Let's go ahead and import these to our MetaMask Wallet.
 First, connect to the localhost network. To do this, click on the Network dropdown (top mid) of MetaMask and select localhost. Rest of the configurations are fine.
-Then, Account -> Import Account. Then paste your private key (for first test account) in there. You should have 10,000 ETH in there. They're not too useful though so don't get excited. Let's call this hh-test0x account.
+Then, ```Account -> Import Account```. Then paste your private key (for first test account) in there. You should have ```10,000 ETH``` in there. They're not too useful though so don't get excited. Let's call this hh-test0x account.
+
+<h3>Creating New wallet : (outside Hardhat) </h3>
+
 Let's create a new account outside of Hardhat and send it some Ether.
 Go to Metamask and Account ```-> Create Account```. Give it a useful name. I'm using recly-test0x. Keep this account safe for now. We'll be using it later on. Save the private key by going to ... menu (the dots menu), then Account Details. Click on Export Private Key. Enter the password for MetaMask and save your private key somewhere. All of these are test keys and should defnitely not be used on mainnet.
-Switch to hh-test0x account and send some ether to recly-test0x. (When you do this again the next time you start this tutorial from scratch, you will get a nonce error. For that, simply go to Accounts -> Settings -> Advanced -> Reset Account.)
-Note the output in console as well as ether changes in your MetaMask accounts.
- 
- 
- 
+Switch to ```hh-test0x``` account and send some ether to recly-test0x. (When you do this again the next time you start this tutorial from scratch, you will get a nonce error. For that, simply go to``` Accounts -> Settings -> Advanced -> Reset Account.)```
 
+<h3> Note : </h3> the output in console as well as ether changes in your MetaMask accounts.
+ 
 
 
 ![image](https://user-images.githubusercontent.com/62806277/159704382-330fb927-5530-4138-80f4-83f8aea52588.png)
-
 
 
 
