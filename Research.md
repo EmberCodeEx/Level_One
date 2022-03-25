@@ -54,7 +54,7 @@ https://www.youtube.com/watch?v=TDGq4aeevgY&ab_channel=Ethereum
 
 <h2>10.	 Coursera course over Decentralized Applications (Dapps):</h2>
 
-      https://www.coursera.org/learn/decentralized-apps-on-blockchain
+ https://www.coursera.org/learn/decentralized-apps-on-blockchain
 
 
 <h2>11.	Coursera course over Blockchain Specialization):</h2>
@@ -70,5 +70,7 @@ https://www.udemy.com/course/build-your-blockchain-az/
 
 https://www.udemy.com/course/blockchain-developer/
 
+      
+     These are some platforms and masters we learned from to creat our blogs. Every time we stuck into the problem we seek our answers from them and lucky they have our answers. Some of them are experienced and pro at creating Smart with Dapp using Ethereum ! 
 
 
