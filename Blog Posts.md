@@ -208,6 +208,7 @@ We will import this file when writing our react script.
  
  
 <h3>Starting a Dummy Network and Deploying the Contract</h3>
+
 ```npx hardhat node```
 
 <h3>Circumspection : </h3>
