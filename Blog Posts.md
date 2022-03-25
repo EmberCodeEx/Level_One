@@ -422,6 +422,7 @@ In this section, we are going to create a new Token called REC. This will be a s
 
 First of start by creating a new  contract by pasting the following code in contracts/Token.sol:
 
+```
 //SPDX-License-Identifier: MIT pragma solidity ^0.8.0;
 import "hardhat/console.sol"; contract Token {
  	string public name = "Recluze Token";
@@ -444,7 +445,7 @@ import "hardhat/console.sol"; contract Token {
  	}
 }
  
-
+```
 
 Compile the contract as before.
 
