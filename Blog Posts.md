@@ -23,11 +23,12 @@ Obviously there is alot more to it.
 
 <h2>Wallet:</h2>
 Think of the wallet as your “identifier” it has two parts: 
+
+
 ```mermaid
 graph TD;
    Wallet-->Public key;
-   Wallet-->Private key;
-   
+   Wallet-->Private key;   
 ```
 
 1)A public key 
