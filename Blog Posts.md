@@ -144,7 +144,8 @@ And try to connect to it using MetaMask.
 <h1>POST 3</h1>
 
 
-Smart Contract
+<h2>Smart Contract</h2>
+
 Once we have the environment set up, we actually need to create a basic contract. The hello world for DApps is a greeter contract that does both reading and writing to the chain.
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
@@ -171,7 +172,7 @@ return greeting;
  }
 }
    ```
-Our contract is in solidity. This cannot be accessed directly from our Javascript frameworks. For that, we need to "compile" it to Javscript (ABI). Think of this as a wrapper that connects to the contract and can help you call functions of the contract without having to worry about the details (marshalling etc.) yourself.
+ Our contract is in solidity. This cannot be accessed directly from our Javascript frameworks. For that, we need to "compile" it to Javscript (ABI). Think of this as a wrapper that connects to the contract and can help you call functions of the contract without having to worry about the details (marshalling etc.) yourself.
 The actual command is pretty simple:
 npx hardhat compile
 
