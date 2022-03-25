@@ -158,7 +158,7 @@ And try to connect to it using MetaMask.
 
 <h2>Smart Contract</h2>
 
-Once we have the environment set up, we actually need to create a basic contract. The hello world for DApps is a greeter contract that does both reading and writing to the chain.
+Once we have the environment set up, we actually need to create a basic contract. The "hello world" for DApps is a greeter contract that does both reading and writing to the chain.
 ```
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
@@ -194,7 +194,7 @@ A new file will be created in:
 
 ![image](https://user-images.githubusercontent.com/62806277/159704325-3b415914-201b-4316-a678-9f85b2ef05ea.png)
 
-We will import this file when writing our react script.
+```We will import this file when writing our react script.```
 
  
  
@@ -207,7 +207,7 @@ We will import this file when writing our react script.
  
  
  
-<h3>Starting a Dummy Network and Deploying the Contract</h3>
+<h3> Starting a Dummy Network and Deploying the Contract </h3>
 
 ```npx hardhat node```
 
@@ -228,7 +228,7 @@ Let's create a new account outside of Hardhat and send it some Ether.
 Go to Metamask and Account ```-> Create Account```. Give it a useful name. I'm using recly-test0x. Keep this account safe for now. We'll be using it later on. Save the private key by going to ... menu (the dots menu), then Account Details. Click on Export Private Key. Enter the password for MetaMask and save your private key somewhere. All of these are test keys and should defnitely not be used on mainnet.
 Switch to ```hh-test0x``` account and send some ether to recly-test0x. (When you do this again the next time you start this tutorial from scratch, you will get a nonce error. For that, simply go to``` Accounts -> Settings -> Advanced -> Reset Account.)```
 
-<h3> Note : </h3> the output in console as well as ether changes in your MetaMask accounts.
+<h3> Note : the output in console as well as ether, changes in your MetaMask accounts. </h3>
  
 
 
@@ -254,7 +254,7 @@ In my case I will use gedit
 
 ``` gedit scripts/deploy.js ```
 
-Now to Deploy the contract use this following command:
+<h3>Now to Deploy the contract use this following command:</h3>
 
 
 
