@@ -61,7 +61,7 @@ Sheeesh that was long.To summarize what we would be doing in this blog is that:
 4)We are going to create a node with hardhat, which is going to put everything come together.
 
 
-“So letssssss get it STARTED in here”
+** “So letssssss get it STARTED in here” **
 
 <h1>POST 2</h1>
 
@@ -228,7 +228,7 @@ Let's create a new account outside of Hardhat and send it some Ether.
 Go to Metamask and Account ```-> Create Account```. Give it a useful name. I'm using recly-test0x. Keep this account safe for now. We'll be using it later on. Save the private key by going to ... menu (the dots menu), then Account Details. Click on Export Private Key. Enter the password for MetaMask and save your private key somewhere. All of these are test keys and should defnitely not be used on mainnet.
 Switch to ```hh-test0x``` account and send some ether to recly-test0x. (When you do this again the next time you start this tutorial from scratch, you will get a nonce error. For that, simply go to``` Accounts -> Settings -> Advanced -> Reset Account.)```
 
-<h3> Note : the output in console as well as ether, changes in your MetaMask accounts. </h3>
+** Note : the output in console as well as ether, changes in your MetaMask accounts. **
  
 
 
