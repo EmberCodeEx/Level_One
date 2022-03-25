@@ -570,7 +570,8 @@ Stop the hardhat node and let's configure it to use the Ropsten Testnet. Edit th
  
 
  
- "https://ropsten.infura.io/v3/e5143812e60d4048a480d4fde5??????",	//
+``` 
+"https://ropsten.infura.io/v3/e5143812e60d4048a480d4fde5??????",	//
  Ropsten endpoint
 
  "0x261e20914b939aec2aa0529c115c8970dfa949e021bb6b0f3bef40faad??????"
@@ -581,7 +582,7 @@ Stop the hardhat node and let's configure it to use the Ropsten Testnet. Edit th
 
  npx hardhat run scripts/deploy.js --network ropsten
 
-
+```
 
 This will use up your ETH, which you can verify through MetaMask. Go to dots menu for
  recly-test0x account and click on View on Etherscan.
