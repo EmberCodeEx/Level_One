@@ -1,4 +1,4 @@
-<h1>Full Research Process: </h1>
+<h1>Source of Research Process: </h1>
 
 <h2>1.	Web Site: </h2>
 
